@@ -1,0 +1,159 @@
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git
+$ mkdir evaluation
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git
+$ cd evaluation/
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation
+$ touch aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation
+$ dir
+aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation
+$ git init
+Initialized empty Git repository in D:/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation/.git/
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git add .
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git commit -a
+[master (root-commit) 41da2e9] primer comentario de la evaluacion, Paso4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git log
+commit 41da2e97260d3fff75a0d153ff4f1ffda0aee609 (HEAD -> master)
+Author: Lana <lana@lana.com>
+Date:   Sun Aug 11 02:30:44 2024 -0400
+
+    primer comentario de la evaluacion, Paso4
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ code .
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ code status
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git diff aprendeGitDesdeCeroYParaBurrosComoYo.txt
+diff --git a/aprendeGitDesdeCeroYParaBurrosComoYo.txt b/aprendeGitDesdeCeroYParaBurrosComoYo.txt
+index e69de29..fb4b535 100644
+--- a/aprendeGitDesdeCeroYParaBurrosComoYo.txt
++++ b/aprendeGitDesdeCeroYParaBurrosComoYo.txt
+@@ -0,0 +1,4 @@
++practica
++practica
++yyy...
++pratica
+\ No newline at end of file
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git commit -a
+[master 234fb6e] 2do comentario de evaluacion Paso8
+ 1 file changed, 4 insertions(+)
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git log
+commit 234fb6ee5f1867042cc7b081ffdf908f9440946b (HEAD -> master)
+Author: Lana <lana@lana.com>
+Date:   Sun Aug 11 02:41:39 2024 -0400
+
+    2do comentario de evaluacion Paso8
+
+commit 41da2e97260d3fff75a0d153ff4f1ffda0aee609
+Author: Lana <lana@lana.com>
+Date:   Sun Aug 11 02:30:44 2024 -0400
+
+    primer comentario de la evaluacion, Paso4
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ code .
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git diff aprendeGitDesdeCeroYParaBurrosComoYo.txt
+diff --git a/aprendeGitDesdeCeroYParaBurrosComoYo.txt b/aprendeGitDesdeCeroYParaBurrosComoYo.txt
+index fb4b535..8364657 100644
+--- a/aprendeGitDesdeCeroYParaBurrosComoYo.txt
++++ b/aprendeGitDesdeCeroYParaBurrosComoYo.txt
+@@ -1,4 +1,4 @@
+-practica
+-practica
+-yyy...
+-pratica
+\ No newline at end of file
++práctica
++práctica
++yyyyy...
++mucha más práctica
+\ No newline at end of file
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git restore
+fatal: you must specify path(s) to restore
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git restore aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git cat aprendeGitDesdeCeroYParaBurrosComoYo.txt
+git: 'cat' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clean
+        mktag
+        stage
+        stash
+        tag
+        var
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git diff aprendeGitDesdeCeroYParaBurrosComoYo.txt
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ cat aprendeGitDesdeCeroYParaBurrosComoYo.txt
+practica
+practica
+yyy...
+pratica
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
+$ git log
+commit 234fb6ee5f1867042cc7b081ffdf908f9440946b (HEAD -> master)
+Author: Lana <lana@lana.com>
+Date:   Sun Aug 11 02:41:39 2024 -0400
+
+    2do comentario de evaluacion Paso8
+
+commit 41da2e97260d3fff75a0d153ff4f1ffda0aee609
+Author: Lana <lana@lana.com>
+Date:   Sun Aug 11 02:30:44 2024 -0400
+
+    primer comentario de la evaluacion, Paso4
+
+Aquil@DESKTOP-81LDT6C MINGW64 /d/CURSOS/Talento Digital/Java/M2/Sesion 11 - Git/evaluation (master)
